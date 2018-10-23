@@ -1,0 +1,91 @@
+<!--
+    Build file for object_search web application
+
+      $Header: /var/lib/cvsroot/Development/RGD/curationTools/nomenclature/build.xml,v 1.1.1.1 2007/04/30 19:13:35 gkowalski Exp $
+      $Revision: 1.1.1.1 $
+      $Date: 2007/04/30 19:13:35 $
+
+    4/27/2007 - Converted from  old Oracle Application Server to Tomcat . This buildfile did
+    not exist.
+
+-->
+
+<project name="nomenclature" default="deploylocal" basedir=".">
+    <property file="build.properties"/>
+    <description>
+        Build file for the Nomenclature Project.
+    </description>
+
+    <!-- set global properties for this build -->
+    <property name="name" value="nomenclature"/>
+    <property name="jspsrc" location="jsp"/>
+    <property name="web-inf" location="WEB-INF"/>
+    <property name="javasrc" location="src"/>
+    <property name="lib" location="lib"/>
+    <property name="non-deploy-libs" location="non-deploy-libs"/>
+    <property name="build" location="build/classes"/>
+    <property name="buildproperties" location="build/properties"/>
+    <property name="dist" location="dist"/>
+
+    <path id="master-classpath">
+        <fileset dir="${lib}">
+            <include name="*.jar"/>
+        </fileset>
+         <fileset dir="${non-deploy-libs}">
+            <include name="*.jar"/>
+        </fileset>
+        <pathelement path="${build}"/>
+    </path>
+
+
+    <target name="init">
+        <!-- Create the time stamp -->
+        <tstamp/>
+        <!-- Create the build directory structure used by compile -->
+        <mkdir dir="${build}"/>
+        <!-- Create the directory for the property files -->
+        <mkdir dir="${buildproperties}"/>
+    </target>
+
+    <target name="compile" depends="init"
+            description="compile the source ">
+        <!-- Compile the java code from ${src} into ${build} -->
+        <javac destdir="${build}" debug="true" target="1.5" source="1.5"
+               deprecation="false" optimize="false" failonerror="true">
+            <src path="${javasrc}"/>
+            <classpath refid="master-classpath"/>
+        </javac>
+
+    </target>
+
+    <target name="dist" depends="compile"
+            description="generate the distribution">
+        <!-- Create the distribution directory -->
+        <mkdir dir="${dist}"/>
+
+        <war destfile="${dist}/${name}.war" webxml="${web-inf}/web.xml">
+            <classes dir="${build}"/>
+            <lib dir="${lib}"/>
+            <fileset dir="${jspsrc}"/>
+        </war>
+
+        
+    </target>
+
+    <target name="deploylocal" depends="dist" description="deploys to local app server">
+        <copy todir="${deploy.path}">
+            <fileset dir="${dist}">
+                <include name="*.war"/>
+            </fileset>
+        </copy>
+    </target>
+
+
+    <target name="clean"
+            description="clean up">
+        <!-- Delete the ${build} and ${dist} directory trees -->
+        <delete dir="${build}"/>
+        <delete dir="${buildproperties}"/>
+        <delete dir="${dist}"/>
+    </target>
+</project>

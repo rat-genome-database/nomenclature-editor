@@ -1,0 +1,114 @@
+P {
+	FONT-FAMILY: arial, sans-serif
+}
+TD {
+	FONT-FAMILY: arial, sans-serif
+}
+LI {
+	FONT-FAMILY: arial, sans-serif
+}
+H1 {
+	FONT-FAMILY: arial, sans-serif
+}
+H2 {
+	FONT-FAMILY: arial, sans-serif
+}
+H3 {
+	FONT-FAMILY: arial, sans-serif
+}
+H4 {
+	FONT-FAMILY: arial, sans-serif
+}
+H5 {
+	FONT-FAMILY: arial, sans-serif
+}
+INPUT {
+	FONT-FAMILY: arial, sans-serif
+}
+SELECT {
+	FONT-FAMILY: arial, sans-serif
+}
+BODY {
+	BACKGROUND: #ffffff
+}
+A {
+	FONT-WEIGHT: bold; COLOR: #004080
+}
+.blue {
+	FONT-SIZE: 8pt; COLOR: white; FONT-STYLE: italic
+}
+.blue A {
+	FONT-SIZE: 8pt; COLOR: white; FONT-STYLE: italic
+}
+.title {
+	FONT-SIZE: 24px; COLOR: black
+}
+.header {
+	FONT-SIZE: 24px; COLOR: black
+}
+INPUT {
+	FONT-SIZE: 9pt
+}
+SELECT {
+	FONT-SIZE: 9pt
+}
+OPTION {
+	FONT-SIZE: 9pt
+}
+#nav1 TD {
+	FONT-SIZE: 9pt
+}
+.links P {
+	FONT-SIZE: 9pt
+}
+.tools P {
+	FONT-SIZE: 9pt
+}
+.links A {
+	FONT-WEIGHT: bold; COLOR: #004080; TEXT-DECORATION: none
+}
+.tools A {
+	FONT-WEIGHT: bold; COLOR: #004080; TEXT-DECORATION: none
+}
+.submenu {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.submenu A {
+	TEXT-DECORATION: none
+}
+.label {
+	FONT-WEIGHT: bold
+}
+.navigation {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.navigation2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.searchtitletd {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.searchfieldtd {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.bylinetable {
+	BACKGROUND-COLOR: #666666
+}
+.bylinetd {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #000000; TEXT-DECORATION: none
+}
+.bylineanchor {
+	FONT-WEIGHT: bold; COLOR: #ffff66; TEXT-DECORATION: none
+}
+.footertable {
+	BACKGROUND-COLOR: #006699
+}
+.footertd {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.footeranchor {
+	COLOR: #ffff99; TEXT-DECORATION: none
+}
+.headeranchor {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}

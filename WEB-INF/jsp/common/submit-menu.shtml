@@ -1,0 +1,26 @@
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="119" align="right" bgcolor='#E6E6E6'><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="119" height="1"></td>
+	<td width="1" align="right" bgcolor='#DDDDDD'><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="18"></td>
+    <td bgcolor='#EEEEEE'>
+      <table width="680" border="0" cellspacing="0" cellpadding="1">
+        <tr> 
+           <td><a class="asubtitle" href='<!--#echo var="webroot"-->/curation/index.shtml' title="Curation_Web">Curation&nbsp;Web&nbsp;|</a></td>
+           <td><a class="asubtitle" href='<!--#echo var="toolroot"-->/curation/online/note_main.cgi' title="Notes Editor">Notes&nbsp;Editor&nbsp;|</a></td>
+           <td><a class="asubtitle" href='<!--#echo var="webroot"-->/nomenclature/index.jsp' title="Online">Online&nbsp;Editor&nbsp;|</a></td>
+	   <td><a class="asubtitle" href='<!--#echo var="webroot"-->/curation/report/' title="Reports">Reports&nbsp;|</a></td>
+           <td><a class="asubtitle" href='<!--#echo var="toolroot"-->/strains/strainRegistrationIndex.cgi' title="Strain Reg">Strain&nbsp;Registration&nbsp;|</a></td>
+           <td><a class="asubtitle" href='<!--#echo var="toolroot"-->/genes/geneRegistrationIndex.cgi' title="Gene Reg">Gene&nbsp;Registration&nbsp;|</a></td>
+           <td><a class="asubtitle" href='<!--#echo var="toolroot"-->/qtls/qtlRegistrationIndex.cgi' title="QTLs Reg">QTL&nbsp;Registration</a></td>
+           <td width="300" bgcolor='#EEEEEE'><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="300" height="1"></td>
+        </tr>
+      </table>
+	</td>
+    <td width="100%" bgcolor='#EEEEEE'>&nbsp;</td>
+  </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr><td bgcolor="#E0E0E0"><img src='<!--#echo var="webroot"-->/common/images/shim.gif' width="1" height="1"></td></tr>
+</table>
